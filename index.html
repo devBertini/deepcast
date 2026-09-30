@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#181425">
+<title>Deepcast</title>
+<meta name="description" content="Deepcast: a cozy pixel-art fishing game for iPhone.">
+<style>
+:root{--bg:#181425;--panel:#262b44;--card:#3a4466;--text:#ead4aa;--muted:#c0cbdc;--gold:#feae34;--water:#2ce8f5;--line:rgba(254,174,52,.25)}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+a{color:var(--water);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{background:linear-gradient(180deg,#124e89,var(--bg));padding:48px 16px 40px}
+.wrap{max-width:760px;margin:0 auto;padding:0 4px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;color:var(--gold);letter-spacing:.04em}
+.brand svg{width:28px;height:28px;color:var(--water)}
+.hero h1{margin:18px 0 6px;font-size:28px;font-weight:800}
+.hero p{margin:0;color:var(--muted)}
+main{max-width:760px;margin:-22px auto 60px;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px 20px 8px}
+@media (min-width:600px){main{padding:28px 28px 8px}}
+.toggle{display:flex;gap:8px;margin:0 0 18px}
+.toggle button{border:1px solid var(--line);background:transparent;color:var(--text);padding:6px 14px;border-radius:999px;font-size:14px;cursor:pointer}
+.toggle button.active{background:var(--gold);color:#181425;border-color:var(--gold);font-weight:700}
+h2{font-size:19px;margin:24px 0 8px;color:var(--gold)}
+.muted{color:var(--muted);font-size:14px}
+.badge{display:inline-block;background:rgba(44,232,245,.12);color:var(--water);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:8px 0 20px}
+@media (min-width:600px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border-radius:14px;padding:14px 16px}
+.card h3{margin:0 0 4px;font-size:16px;color:var(--gold)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+footer{max-width:760px;margin:0 auto 50px;padding:0 16px;color:var(--muted);font-size:13px;text-align:center}
+hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.lang[hidden]{display:none}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 1v5" stroke="currentColor" stroke-width="2"/><path d="M7 11a5 5 0 0 1 10 0Z" fill="#e43b44"/><path d="M7 11h10a5 5 0 0 1-10 0Z" fill="currentColor"/><path d="M2 20c3-2 5-2 8 0s5 2 8 0 3-1 4-1" stroke="currentColor" stroke-width="2" fill="none"/></svg> Deepcast</div>
+    <h1>Cast. Strike. Fill the album.</h1>
+    <p>A cozy pixel-art fishing game for iPhone.</p>
+  </div>
+</header>
+<main>
+  <div class="toggle">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-pt" onclick="setLang('pt')">Português</button>
+  </div>
+  <section class="lang" id="lang-en">
+<span class="badge">Coming soon to the App Store for iPhone</span>
+<p>Deepcast is a pixel-art fishing game you play with one thumb, from a canoe in the middle of a huge lake seen in cross-section. Cast, watch the float, strike when it sinks, fight the line without snapping it, and fill an album with the photo of every fish.</p>
+<div class="grid"><div class="card"><h3>60 invented fish</h3><p>Each with its depth, hours, season and bait, down to the abyss. Every catch is a shadow until it comes out of the water; tips from the shop tell where to look.</p></div><div class="card"><h3>Six legends</h3><p>Four in the deep water, one each season, and two at the bottom of the abyss, with a huge shadow and a harder fight.</p></div><div class="card"><h3>A living lake</h3><p>The sun and the moon on the game's own clock, seasons, wind, rain, fog, hail, shooting stars and the aurora, schools passing by.</p></div><div class="card"><h3>Special days</h3><p>Carnival, Easter, the June Festival, Independence week, Christmas and New Year each bring a fish of their own.</p></div><div class="card"><h3>A phone in the canoe</h3><p>Sell to the buyer's boat at the day's market price, and order bait, gear and more from the shop; a drone brings it.</p></div><div class="card"><h3>A radio</h3><p>Calm guitar and lo-fi songs made for the game; pick one or let it shuffle.</p></div><div class="card"><h3>No account</h3><p>Your save stays on your iPhone and the game plays offline. Ads only when you ask for a boost.</p></div></div>
+  </section>
+  <section class="lang" id="lang-pt" hidden>
+<span class="badge">Em breve na App Store para iPhone</span>
+<p>Deepcast é um jogo de pesca em pixel art que você joga com um polegar, de uma canoa no meio de um lago enorme visto em corte. Lance, olhe a boia, fisgue quando ela afundar, lute com a linha sem deixar estourar e complete um álbum com a foto de cada peixe.</p>
+<div class="grid"><div class="card"><h3>60 peixes inventados</h3><p>Cada um com sua profundidade, horário, estação e isca, até o abismo. Todo peixe é uma sombra até sair da água; dicas na loja contam onde procurar.</p></div><div class="card"><h3>Seis lendas</h3><p>Quatro nas águas fundas, uma a cada estação, e duas no fundo do abismo, com uma sombra enorme e uma luta mais dura.</p></div><div class="card"><h3>Um lago vivo</h3><p>O sol e a lua no relógio do próprio jogo, estações, vento, chuva, neblina, granizo, estrelas cadentes e aurora, cardumes de passagem.</p></div><div class="card"><h3>Datas especiais</h3><p>Carnaval, Páscoa, Festa Junina, Semana da Pátria, Natal e Ano Novo trazem cada um um peixe só deles.</p></div><div class="card"><h3>Um celular na canoa</h3><p>Venda para o barco do comprador pelo preço do mercado do dia e peça iscas, equipamento e mais na loja; um drone entrega.</p></div><div class="card"><h3>Um rádio</h3><p>Músicas de violão calmo e lo-fi feitas para o jogo; escolha uma ou deixe no aleatório.</p></div><div class="card"><h3>Sem conta</h3><p>O seu save fica no seu iPhone e o jogo roda sem internet. Anúncio só quando você pede um reforço.</p></div></div>
+  </section>
+</main>
+<footer>&copy; 2026 Deepcast &middot; <a href="privacy/">Privacy</a> &middot; <a href="support/">Support</a> &middot; <a href="terms/">Terms</a></footer>
+<script>
+function setLang(l){
+  document.getElementById('lang-en').hidden=(l!=='en');
+  document.getElementById('lang-pt').hidden=(l!=='pt');
+  document.getElementById('btn-en').classList.toggle('active',l==='en');
+  document.getElementById('btn-pt').classList.toggle('active',l==='pt');
+  document.documentElement.lang=l==='pt'?'pt-BR':'en';
+}
+if((navigator.language||'').toLowerCase().startsWith('pt'))setLang('pt');
+</script>
+</body>
+</html>

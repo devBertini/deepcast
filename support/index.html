@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#181425">
+<title>Deepcast: Support</title>
+<meta name="description" content="Deepcast support and questions.">
+<style>
+:root{--bg:#181425;--panel:#262b44;--card:#3a4466;--text:#ead4aa;--muted:#c0cbdc;--gold:#feae34;--water:#2ce8f5;--line:rgba(254,174,52,.25)}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+a{color:var(--water);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{background:linear-gradient(180deg,#124e89,var(--bg));padding:48px 16px 40px}
+.wrap{max-width:760px;margin:0 auto;padding:0 4px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;color:var(--gold);letter-spacing:.04em}
+.brand svg{width:28px;height:28px;color:var(--water)}
+.hero h1{margin:18px 0 6px;font-size:28px;font-weight:800}
+.hero p{margin:0;color:var(--muted)}
+main{max-width:760px;margin:-22px auto 60px;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px 20px 8px}
+@media (min-width:600px){main{padding:28px 28px 8px}}
+.toggle{display:flex;gap:8px;margin:0 0 18px}
+.toggle button{border:1px solid var(--line);background:transparent;color:var(--text);padding:6px 14px;border-radius:999px;font-size:14px;cursor:pointer}
+.toggle button.active{background:var(--gold);color:#181425;border-color:var(--gold);font-weight:700}
+h2{font-size:19px;margin:24px 0 8px;color:var(--gold)}
+.muted{color:var(--muted);font-size:14px}
+.badge{display:inline-block;background:rgba(44,232,245,.12);color:var(--water);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:8px 0 20px}
+@media (min-width:600px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border-radius:14px;padding:14px 16px}
+.card h3{margin:0 0 4px;font-size:16px;color:var(--gold)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+footer{max-width:760px;margin:0 auto 50px;padding:0 16px;color:var(--muted);font-size:13px;text-align:center}
+hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.lang[hidden]{display:none}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 1v5" stroke="currentColor" stroke-width="2"/><path d="M7 11a5 5 0 0 1 10 0Z" fill="#e43b44"/><path d="M7 11h10a5 5 0 0 1-10 0Z" fill="currentColor"/><path d="M2 20c3-2 5-2 8 0s5 2 8 0 3-1 4-1" stroke="currentColor" stroke-width="2" fill="none"/></svg> Deepcast</div>
+    <h1>Support</h1>
+    <p>We read every message.</p>
+  </div>
+</header>
+<main>
+  <div class="toggle">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-pt" onclick="setLang('pt')">Português</button>
+  </div>
+  <section class="lang" id="lang-en">
+<h2>Contact</h2>
+<p>Write to <a href="mailto:bertini.b@icloud.com">bertini.b@icloud.com</a> with your iPhone model and what happened. We answer in English or Portuguese.</p>
+<h2>Questions</h2>
+<p><strong>Where is my progress saved?</strong> On your iPhone only. It comes back with your device's iCloud or computer backup if you restore one.</p>
+<p><strong>I bought the Pass on another device.</strong> Open the phone in the game, then the Pass app, and tap Restore purchase.</p>
+<p><strong>How do boosts and ads work?</strong> Only when you ask: in the phone's Boosts app, each boost plays a short ad and starts when the ad ends; skipping it gives nothing. Three a day. With the Pass, five a day and no ads.</p>
+<p><strong>The line keeps snapping.</strong> Let go of the water before the tension reaches the red zone, then press again. A better line makes the red zone smaller; the Pass's reel assist makes the safe zone 25% larger.</p>
+<p><strong>A species never bites.</strong> Its card in the album says where, when, in which season and weather and with which bait it bites. The deep water needs the fourth rod.</p>
+<p><strong>How do I see the tutorial again?</strong> Pause, then Fishing book.</p>
+  </section>
+  <section class="lang" id="lang-pt" hidden>
+<h2>Contato</h2>
+<p>Escreva para <a href="mailto:bertini.b@icloud.com">bertini.b@icloud.com</a> com o modelo do seu iPhone e o que aconteceu. Respondemos em português ou inglês.</p>
+<h2>Perguntas</h2>
+<p><strong>Onde fica salvo o meu progresso?</strong> Só no seu iPhone. Ele volta com o backup do iCloud ou do computador, se você restaurar um.</p>
+<p><strong>Comprei o Passe em outro aparelho.</strong> Abra o celular no jogo, depois o app Passe, e toque em Restaurar compra.</p>
+<p><strong>Como funcionam os reforços e os anúncios?</strong> Só quando você pede: no app Reforços do celular, cada reforço mostra um anúncio curto e começa quando ele termina; pular não dá nada. Três por dia. Com o Passe, cinco por dia e sem anúncio.</p>
+<p><strong>A linha vive estourando.</strong> Solte a água antes de a tensão chegar à zona vermelha e aperte de novo. Uma linha melhor diminui a zona vermelha; a ajuda de puxada do Passe deixa a zona segura 25% maior.</p>
+<p><strong>Uma espécie nunca morde.</strong> A carta dela no álbum diz onde, quando, em que estação e clima e com que isca ela morde. As águas fundas pedem a quarta vara.</p>
+<p><strong>Como vejo o tutorial de novo?</strong> Pausa, depois Livro de pesca.</p>
+  </section>
+</main>
+<footer>&copy; 2026 Deepcast &middot; <a href="../">Home</a> &middot; <a href="../privacy/">Privacy</a> &middot; <a href="../support/">Support</a> &middot; <a href="../terms/">Terms</a></footer>
+<script>
+function setLang(l){
+  document.getElementById('lang-en').hidden=(l!=='en');
+  document.getElementById('lang-pt').hidden=(l!=='pt');
+  document.getElementById('btn-en').classList.toggle('active',l==='en');
+  document.getElementById('btn-pt').classList.toggle('active',l==='pt');
+  document.documentElement.lang=l==='pt'?'pt-BR':'en';
+}
+if((navigator.language||'').toLowerCase().startsWith('pt'))setLang('pt');
+</script>
+</body>
+</html>
